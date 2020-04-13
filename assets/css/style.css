@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* ---------- Typography Colors/Fonts */
+
+body {
+    font-family: 'Roboto', sans-serif;   
+    color: #504544;
+    font-size: 17px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abril Fatface', cursive; 
+}
+
+a {
+    color: #504544;
+}
+
+a:hover {
+    color: #776e6d
+}
+
+.jumbotron {
+    color: #f9f9f9;
+}
+
+.review h4 {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.review blockquote {
+   margin: 0 0 10px 0;
+}
+
+
+/* ------------ Element Background Colors */
+footer {
+    background-color: #aacfcf;
+}
+
+.home-reviews {
+    background-color: #fbd3d3;
+}
+
+.home-about {
+    background-color: #fde2e2;
+}
+
+
+/* ------------- Site-wide Header */
+#header h1 { 
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-weight: bold;
+    text-shadow: 4px 4px 3px hsla(0, 0%, 0%, 0.5);
+}
+
+.navbar {
+    padding: 0 5px;
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+}
+
+.navbar-dark .navbar-toggler {
+    border: 0;
+    padding-right: 0px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f9f9f9;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fbd3d3;
+}
+
+.navbar-dark .navbar-brand {
+    color: #f9f9f9;
+    font-size: 1.25rem;
+}
+
+/* ----------- Home Page Header amd Body */
+.navbar-and-hero {
+    background: url('../images/patrick-fore-ZmH0g1ievTg-unsplash.jpg')  no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative; 
+    z-index: 1;
+}
+
+.navbar-and-hero .jumbotron {
+    background-color: transparent;
+    padding: 40px 0 80px 0;
+    margin: 0;
+}
+
+.jumbotron h2 {
+    text-shadow: 4px 4px 10px rgba(0,0,0,0.4), -4px -4px 10px rgba(0,0,0,0.4);
+}
+
+.jumbotron .lead {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7), -2px -2px 4px rgba(0,0,0,0.7);
+    font-size: 22px;
+}
+
+.jumbotron .lead .badge {
+    text-shadow: none;
+}
+
+.btn-primary {
+    background-color: #aacfcf;
+    border-color: #aacfcf;
+    color: #353e3e;
+    font-size: 14px;
+}
+
+.btn-primary:hover {
+    background-color: #78afaf;
+    border-color: #78afaf;
+    color: #f9f9f9;
+}
+
+.jumbotron-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.35); 
+    z-index: -1;
+}
+
+.navbar-and-hero h1 {
+    color: #f1ebeb;
+    padding-top: 10px;
+}
+
+.home-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.home-section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.home-reviews .review {
+    background-color: #ffe4e4;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px 1px rgba(165, 126, 126, 0.12);   
+    border-radius: 10px;
+    height: 100%;
+    padding: 10px;
+}
+
+.home-reviews .review-column {
+    margin-bottom: 20px;
+}
+
+
+/*-------- Footer */
+footer {
+    padding-top: 30px;
+    padding-bottom: 0;
+    font-size: 13px;
+}
+
+footer .footer-column {
+    padding-bottom: 20px;
+    line-height: 22px;
+}
+
+footer .footer-column a {
+    text-decoration: underline;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    list-style: none;
+}
+
+footer .social-links {
+    font-size: 24px;
+}
+
+footer .social-links .list-inline-item a {
+    border-radius: 4px;
+    padding: 5px;
+}
+
+footer .social-links .list-inline-item a:hover {
+    color: white;
+    background-color: #fdb6b6;
+}
+
+
+
+
+
+
+/* -------- Media Queries */
+
+
+
+/* --- small */
+@media only screen and (max-width: 576px) {
+    body {
+        font-size: 15px;
+    }
+
+    .home-section h2 {
+        text-align: center;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    footer .social-links .list-inline-item:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    .navbar-and-hero .jumbotron {
+        background-color: transparent;
+        padding: 30px 0;
+    }
+}
