@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
-/* ---------- Typography Colors/Fonts */
+/* ---------- Typography Colors/Fonts/Sizes */
 
 body {
     font-family: 'Roboto', sans-serif;   
@@ -14,10 +14,6 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color: #504544;
-}
-
-a:hover {
-    color: #776e6d
 }
 
 .jumbotron {
@@ -57,7 +53,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 0px;
     font-weight: bold;
-    text-shadow: 4px 4px 3px hsla(0, 0%, 0%, 0.5);
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
 }
 
 .navbar {
@@ -66,6 +62,27 @@ footer {
 
 .navbar .nav-link {
     font-size: 14px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .order-ahead-badge {
+    text-transform: uppercase;
+    font-size: 15px;
+    background-color: #fbd3d3;
+    color: #504544;
+    padding: 1px 7px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.navbar .order-ahead-menu-item {
+    text-transform: uppercase;
+    color: #e6e6e6;
+    font-size: 14px;
+    margin-top: 6px;
+    font-weight: bold;
+    margin-bottom: 9px;
 }
 
 .navbar-dark .navbar-toggler {
@@ -91,7 +108,6 @@ footer {
     background: url('../images/patrick-fore-ZmH0g1ievTg-unsplash.jpg')  no-repeat;
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
     position: relative; 
     z-index: 1;
 }
@@ -120,6 +136,7 @@ footer {
     border-color: #aacfcf;
     color: #353e3e;
     font-size: 14px;
+    box-shadow: 2px 2px 5px 1px rgba(165, 126, 126, 0.12);   
 }
 
 .btn-primary:hover {
@@ -150,21 +167,44 @@ footer {
 
 .home-section h2 {
     font-size: 32px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .home-reviews .review {
-    background-color: #ffe4e4;
+    background-color: #e6e6e6; 
     font-size: 15px;
     box-shadow: 2px 2px 5px 1px rgba(165, 126, 126, 0.12);   
     border-radius: 10px;
     height: 100%;
-    padding: 10px;
+    padding: 15px;
 }
 
 .home-reviews .review-column {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
+
+.home-about img {
+    width: 33%;
+    margin-left: 20px;
+}
+
+.home-about strong {
+    background-color: #fbd3d3;
+    padding: 0 2px;
+    font-weight: normal;
+}
+
+.home-about .alert-primary {
+    background-color: #e6e6e6;
+    border-color: #aacfcf;
+    color: #504544;
+}
+
+.home-about .alert-primary strong {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 
 
 /*-------- Footer */
@@ -179,10 +219,6 @@ footer .footer-column {
     line-height: 22px;
 }
 
-footer .footer-column a {
-    text-decoration: underline;
-}
-
 footer nav ul {
     list-style: none;
     padding: 0;
@@ -190,6 +226,27 @@ footer nav ul {
 
 footer nav ul li {
     list-style: none;
+}
+
+footer .address a {
+    text-decoration: underline;
+}
+
+footer .address a:hover {
+    color: white;
+    background-color: #fdb6b6;
+    text-decoration: none;
+}
+
+footer nav ul li a {
+    text-decoration: underline;
+    padding: 1px 2px;
+}
+
+footer nav ul li a:hover {
+    color: white;
+    background-color: #fdb6b6;
+    text-decoration: none;
 }
 
 footer .social-links {
@@ -211,6 +268,8 @@ footer .social-links .list-inline-item a:hover {
 
 
 
+
+
 /* -------- Media Queries */
 
 
@@ -222,6 +281,14 @@ footer .social-links .list-inline-item a:hover {
     }
 
     .home-section h2 {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    .navbar-nav li {
         text-align: center;
     }
 
@@ -240,5 +307,9 @@ footer .social-links .list-inline-item a:hover {
     .navbar-and-hero .jumbotron {
         background-color: transparent;
         padding: 30px 0;
+    }
+
+    .home-about img {
+        width: 50%;
     }
 }
